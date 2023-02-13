@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import homePageSlice from "./containers/HomePage/homePageSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    homePage: homePageSlice,
+  },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
