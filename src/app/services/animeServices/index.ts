@@ -15,7 +15,7 @@ class AnimeService {
       if (!response || !response.data)
         throw new Error("Oops, something went wrong!");
 
-      return response.data;
+      return response.data.Page;
     } catch (err) {
       throw err;
     }
